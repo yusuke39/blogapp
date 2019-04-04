@@ -1,0 +1,72 @@
+
+
+.content_post{
+    max-width: 1000px;
+    min-height: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+    padding: 30px;
+    border: outset;
+    border-color: #f08080;
+}
+
+nav{
+  clear: both;
+}
+
+.i{
+  height: 60px
+  width: 100%;
+  background-color: pink;
+}
+
+.contents {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.posts_string{
+  color: #f08080;
+  font-size: 30px;
+  text-align: center;
+}
+
+.textarea{
+  width: 80%;
+  margin: 0px;
+  font: 15px/24px sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.3em;
+  transition: 0.3s;
+  letter-spacing: 1px;
+  color: #fa8072;
+  border: none;
+  border-bottom: 2px solid #f08080;
+  background: transparent;
+  outline: 0;
+}
+
+.btn{
+  display: inline-block;
+  padding: 0em 5em;
+  text-decoration: none;
+  background: #f08080;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 0px #c0c0c0;
+  border-radius: 5px;
+}
+
+.btn:active {
+  /*ボタンを押したとき*/
+  /*-webkit-transform: translateY(4px);*/
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+
+.footer{
+  margin-top: 30px;
+  text-align: center;
+}

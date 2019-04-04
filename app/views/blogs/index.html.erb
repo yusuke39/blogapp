@@ -1,0 +1,30 @@
+<nav>
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo">BlogApp</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+    <% if user_signed_in? %>
+      <li><a><%= link_to "Log Out", destroy_user_session_path, method: :delete %></a></li>
+      <li><a class="move_to_post"><%= link_to "投稿する", new_blog_path, method: :get %></a></li>
+    <% elsif %>
+      <li><a><%= link_to "Log In", new_user_session_path, method: :get  %></a></li>
+      <li><a><%= link_to "Sign Up",  new_user_registration_path, method: :get %></a></li>
+    <% end %>
+
+
+    </ul>
+  </div>
+</nav>
+
+<div class= "contents_row">
+<% @blogs.each do |blog| %>
+  <div class = "content_post" >
+    <%= simple_format(blog.text) %>
+    <!-- <span class = "name"><%= blog.text %></span> -->
+  </div>
+<%end%>
+<div class="footer">
+  <%= paginate @blogs %>
+</div>
+</div>
+
+<script type="text/javascript" src="./app.js"></script>
